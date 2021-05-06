@@ -2,7 +2,7 @@
   "name": "off-demand",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4000",
+  "proxy": "http://13.213.61.131:4000",
   "dependencies": {
     "@fontsource/roboto": "^4.2.3",
     "@material-ui/core": "^4.11.3",
