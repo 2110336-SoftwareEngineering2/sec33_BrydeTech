@@ -155,7 +155,7 @@
 var express = require('express');
 var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://127.0.0.1:27017/";
+var url = "mongodb://admin:1234@mongo:27017";
 const { body, validationResult, check } = require('express-validator');
 var formidable = require('formidable')
 var fs = require('fs');

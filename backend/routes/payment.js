@@ -5,7 +5,7 @@ const qrcode = require('qrcode')
 const fs = require('fs') 
 var mongo = require('mongodb');
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://127.0.0.1:27017/";
+var url = "mongodb://admin:1234@mongo:27017";
 const { body, validationResult, check } = require('express-validator');
 const { parse } = require('path');
 /* GET home page. */

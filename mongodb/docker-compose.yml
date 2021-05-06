@@ -1,0 +1,13 @@
+mongo:
+    image: mongo
+    container_name: mongo
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: admin
+        MONGO_INITDB_ROOT_PASSWORD: 1234
+        MONGO_INITDB_DATABASE: BrydeTech
+    volumes:
+      - /var/lib/mongo
+    expose:
+      - "27017"
+    ports:
+      - "27017:27017"

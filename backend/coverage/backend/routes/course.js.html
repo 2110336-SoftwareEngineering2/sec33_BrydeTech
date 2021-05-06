@@ -138,7 +138,7 @@ var mongo = require('mongodb');
 var router = express.Router();
 var mongoose = require('mongoose');
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://127.0.0.1:27017/";
+var url = "mongodb://admin:1234@mongo:27017";
 var Binary = require('mongodb').Binary;
 const { query, validationResult, check } = require('express-validator');
 router.get('/',[query('id').notEmpty().exists().isMongoId(),query('student_name').notEmpty().exists()], <span class="fstat-no" title="function not covered" >fu</span>nction(req, res, next) {

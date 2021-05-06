@@ -3,7 +3,7 @@ var mongo = require('mongodb');
 var router = express.Router();
 var mongoose = require('mongoose');
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://127.0.0.1:27017/";
+var url = "mongodb://admin:1234@mongo:27017";
 var Binary = require('mongodb').Binary;
 const { query,param,body, validationResult, check } = require('express-validator');
 var fs = require('fs');
@@ -34,7 +34,7 @@ router.post('/',[check("minprice","Please enter minprice").notEmpty().exists(),
                         res.json({result:false , error:err})
                     }
                     res.json({result:result});
-                    console.log(result)
+                    //console.log(result)
                     db.close();
                 })
             }

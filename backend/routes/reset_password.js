@@ -4,7 +4,7 @@ var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 const bcrypt = require('bcryptjs');
 const saltRounds = 10;
-var url = "mongodb://127.0.0.1:27017/";
+var url = "mongodb://admin:1234@mongo:27017";
 var data = require("./forget_password.js");
 const { body, validationResult, check } = require('express-validator');
 

@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongo = require('mongodb');
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://127.0.0.1:27017/";
+var url = "mongodb://admin:1234@mongo:27017";
 const { query,body, validationResult, check } = require('express-validator');
 /* GET home page. */
 router.get('/',[query('element').notEmpty().exists().isIn(['ads','courses','promotions'])] ,function(req, res, next) {
