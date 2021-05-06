@@ -2,7 +2,7 @@ var mongo = require('mongodb');
 var express = require('express');
 var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://127.0.0.1:27017/";
+var url = "ec2-user@ec2-13-213-61-131.ap-southeast-1.compute.amazonaws.com/";
 const { body, validationResult, check } = require('express-validator');
 const bcrypt = require('bcryptjs');
 /* GET home page. */
